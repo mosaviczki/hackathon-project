@@ -1,7 +1,7 @@
 /*gradiente com animação de fundo*/
 body{
     margin: 0px;
-    background-image: linear-gradient(to left, rgb(5, 1, 69),rgb(107, 0, 164), rgb(104, 0, 44));
+    background-image: linear-gradient(to left, rgb(91, 80, 252), rgb(226, 185, 248));
     animation: gradiente 4s infinite alternate;
     background-size: 300% 300%;
     display: flex;
