@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    list-style: none;
+    text-decoration: none;
+    color: #914B21
+}
+
+
+.header h1 img {
+    width: 10vw;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 100vw;
+        margin-top: 1.5rem;
+}

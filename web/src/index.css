@@ -1,0 +1,24 @@
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  --primary-font-color:#914B21;
+  --background: #F1F1F1;
+
+  --footer-background: #DEDEDE;
+  --primary-title-color: #06A7A7;
+
+
+  color-scheme: light dark;
+  color: var(--primary-font-color);
+
+  background-color: var(--background);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}

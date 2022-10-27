@@ -1,0 +1,36 @@
+footer {
+    background-color: var(--footer-background);
+    width:100vw;
+    height:35vh;
+
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.images {
+    height:100%;
+    width:fit-content;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.rights {
+    align-self:end;
+}
+
+.contact {
+    margin-right:15%;
+}
+
+.footer-logo {
+    height:25%;
+    margin: 15% 10%;
+}
+
+.footer-subLogo {
+    width: 50%;
+}

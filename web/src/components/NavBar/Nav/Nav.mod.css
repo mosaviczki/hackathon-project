@@ -1,0 +1,27 @@
+.nav {
+    width: 40%;
+    align-self: center;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav a:hover {
+    animation: changeColor 500ms ease-in forwards;
+}
+
+@keyframes changeColor {
+    0% {
+        color: #914B21;
+    }
+
+    50% {
+        color: #4BC0C0;
+    }
+
+    100% {
+        color: #06A7A7;
+    }
+}
