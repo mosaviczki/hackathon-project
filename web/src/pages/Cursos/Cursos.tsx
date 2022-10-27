@@ -22,7 +22,7 @@ const Cursos = () => {
             id: 3,
             name: 'Java',
             description: 'Java é uma linguagem de programação e uma plataforma computacional lançada pela primeira vez pela Sun Microsystems em 1995. Existem muitas aplicações e sites que não funcionarão, a menos que você tenha o Java instalado e, em alguns casos, você precisa do Java para jogar jogos online.',
-            image: 'https://www.java.com/pt_BR/images/brand/java_logo.png'
+            image: 'https://assets.stickpng.com/images/58480979cef1014c0b5e4901.png'
         },
         {
             id: 4,
@@ -49,14 +49,14 @@ const Cursos = () => {
         {
             id: 1,
             name: 'Introdução à Programação',
-            description: 'Aprenda a programar do zero, com a linguagem Python, e desenvolva suas habilidades de programação.',
-            image: 'https://www.python.org/static/community_logos/python-logo-master-v3-TM.png'
+            description: 'Aprenda a programar do zero, e desenvolva suas habilidades de programação.',
+            image: 'https://cdn-icons-png.flaticon.com/512/2172/2172943.png'
         },
         {
             id: 2,
             name: 'Variáveis e Tipos de Dados',
-            description: 'Aprenda a criar variáveis e a trabalhar com os principais tipos de dados em Python.',
-            image: 'https://www.python.org/static/community_logos/python-logo-master-v3-TM.png'
+            description: 'Aprenda a criar variáveis e a trabalhar com os principais tipos de dados.',
+            image: 'https://cdn-icons-png.flaticon.com/512/2172/2172943.png'
         },
     ]
 

@@ -24,9 +24,9 @@ const Curso = () => {
 
     const { id } = useParams();
     const [curso, setCurso] = useState({
-        name: 'Curso de Python',
-        description: 'Curso de Python',
-        image: 'https://www.python.org/static/community_logos/python-logo-master-v3-TM.png'
+        name: 'Curso de Programação',
+        description: 'Curso de Programação',
+        image: 'https://cdn-icons-png.flaticon.com/512/2172/2172943.png'
     } as CursoParams);
 
     const topics = [
@@ -35,19 +35,19 @@ const Curso = () => {
             {
                 id: 1,
                 name: 'Introdução',
-                description: 'Introdução ao curso de Python',
+                description: 'Introdução ao curso de Programação',
                 video: <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/KxmRCc_Jris" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" style={{zIndex:5}} ></iframe>
             },
         ],[
             {
                 id: 2,
                 name: 'Variáveis',
-                description: 'Variáveis em Python'
+                description: 'Variáveis no curso de Programação',
             },
             {
                 id: 3,
                 name: 'Funções',
-                description: 'Funções em Python'
+                description: 'Funções no curso de Programação',
             }
     ] 
     ]
