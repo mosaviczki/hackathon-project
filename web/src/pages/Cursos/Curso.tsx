@@ -23,6 +23,7 @@ interface Topic {
 const Curso = () => {
 
     const { id } = useParams();
+    const [selectedVideo, setSelectedVideo] = useState(<></>);
     const [curso, setCurso] = useState({
         name: 'Curso de Programação',
         description: 'Curso de Programação',
@@ -56,7 +57,8 @@ const Curso = () => {
         <div>
             <Header />
             <h1>{curso.name}</h1>
-            <CourseModule titulo='Introdução à linguagem' topics={ topics } />
+            <CourseModule titulo='Introdução à linguagem' topics={topics} callback={(video)=> setSelectedVideo(video)} />
+            <div style={{width:"100vw", justifyContent:"center"}}>{selectedVideo != <></> ? selectedVideo : <></>}</div>
             <Footer/>
         </div>
     );

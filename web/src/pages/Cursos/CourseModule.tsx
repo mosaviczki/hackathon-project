@@ -4,6 +4,7 @@ import "./CourseModule.mod.css";
 interface CourseModuleProps {
     titulo: string;
     topics: Topic[][];
+    callback: (video: React.ReactNode) => void;
 }
 
 
@@ -14,7 +15,7 @@ interface Topic {
     video?: React.ReactNode;
 }
 
-const CourseModule = ({ titulo, topics }: CourseModuleProps) => {
+const CourseModule = ({ titulo, topics ,callback }: CourseModuleProps) => {
     return (
         <div className="mainModule">
             <div>
@@ -27,7 +28,7 @@ const CourseModule = ({ titulo, topics }: CourseModuleProps) => {
                                 <div style={{display:'flex'}}>
 
                         {topic.map((t) => {
-                            return <Class id={t.id} name={t.name} description={t.description} video={t.video} />
+                            return <Class id={t.id} name={t.name} description={t.description} video={t.video} callback={(video)=>callback(video) } />
                         })}
                                 </div>)
                         }
