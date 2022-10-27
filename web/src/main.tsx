@@ -8,6 +8,7 @@ import {
   RouterProvider,
   Route,
 } from "react-router-dom";
+import { Curso } from './pages/Cursos/Curso'
 
 const router = createBrowserRouter([
   {
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
   {
     path: "/cursos",
     element: <Cursos/>
+  },
+  {
+    path: "/cursos/:id",
+    element: <Curso/>
   }
 ]);
 
