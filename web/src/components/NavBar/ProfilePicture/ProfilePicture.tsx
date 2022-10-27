@@ -6,8 +6,6 @@ interface ProfilePictureProps {
 }
 
 const ProfilePicture = ({src,size}:ProfilePictureProps) => {
-
-    
     return (
         <div className="profile">
             <img src={src} alt="" className="profile_picture" style={{ width: size,height:size, borderRadius:"50%"}} />

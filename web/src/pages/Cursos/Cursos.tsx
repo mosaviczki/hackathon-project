@@ -20,10 +20,27 @@ const Cursos = () => {
         },
     ]
 
+    const frameworks = [
+        {
+            id: 1,
+            name: 'Django',
+            description: 'Django é um framework web de código aberto, escrito em Python, que segue o padrão de projeto modelo-template-view (MTV). É mantido pela Django Software Foundation (DSF), uma organização sem fins lucrativos fundada por Adrian Holovaty e Simon Willison.',
+            image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Django_logo.svg/1200px-Django_logo.svg.png'
+        },
+        {
+            id: 2,
+            name: 'ReactJS',
+            description: 'React é uma biblioteca JavaScript de código aberto com foco em criar interfaces de usuário em páginas web. É mantido pelo Facebook, Instagram, outras empresas e uma comunidade de desenvolvedores individuais.',
+            image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png'
+        },
+    ]
+
     return (
         <div className="App">
             <Header />
             <ProgrammingSection title="Linguagens" components={linguagens} />
+            <div style={{height:"10vh"}}></div>
+            <ProgrammingSection title="Frameworks" components={frameworks} />
 
             <Footer />
         </div>
