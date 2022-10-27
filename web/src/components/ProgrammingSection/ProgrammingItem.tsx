@@ -1,13 +1,18 @@
 import "./ProgrammingItem.mod.css"
+import { useNavigate } from 'react-router-dom';
+import { useCallback } from "react";
 
 interface ProgrammingSectionItemProps {
+    id:number;
     title: string;
     description: string;
     image: string;
     showDescription: boolean;
 }
 
-const ProgrammingSectionItem = ({ title, description, image, showDescription }: ProgrammingSectionItemProps) => { 
+const ProgrammingSectionItem = ({ id,title, description, image, showDescription }: ProgrammingSectionItemProps) => { 
+    const navigate = useNavigate();
+    const onClick = useCallback(() => navigate('/cursos/'+id, { replace: true }), [navigate]); 
     return (
         <div className='programming-item'>
             <img className="imgIcon" src={image} alt={title} />
@@ -15,7 +20,7 @@ const ProgrammingSectionItem = ({ title, description, image, showDescription }: 
             {showDescription ?
                 <>
                     <p className="description">{description}</p>
-                    <div className="goToButton"  >Ir para curso</div>
+                    <div className="goToButton" onClick={() => onClick()}>Ir para curso</div>
                 </>
                 : <></>}
         </div>

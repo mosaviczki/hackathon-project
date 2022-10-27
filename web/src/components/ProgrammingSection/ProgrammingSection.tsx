@@ -30,7 +30,7 @@ const ProgrammingSection = ({ title, components }: ProgrammingSectionProps) => {
             <div style={style}>
                 {components.map((component) => {
                     return <div onClick={() => selected == component.id ? setSelected(0) :setSelected(component.id)}>
-                        <ProgrammingSectionItem title={component.name} description={component.description} image={component.image} showDescription={selected==component.id} />
+                        <ProgrammingSectionItem id={ component.id } title={component.name} description={component.description} image={component.image} showDescription={selected==component.id} />
                     </div>
                 })}
             </div>
