@@ -1,22 +1,4 @@
-.modules {
+.mainModule div {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    align-self:center;
-    width: 45vw;
-    height: 15vh;
-    padding:1.5rem;
-}
-
-.module {
-    border: 1px solid var(--primary-font-color);
-    border-radius: 5em;
-    border-width: 5px;
-    margin: 2.5em;
-    padding:1.5em;
-}
-
-
-.mainModule {display:flex;
     justify-content: center;
 }
