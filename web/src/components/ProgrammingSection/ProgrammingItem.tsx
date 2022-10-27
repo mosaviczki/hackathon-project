@@ -13,7 +13,10 @@ const ProgrammingSectionItem = ({ title, description, image, showDescription }: 
             <img className="imgIcon" src={image} alt={title} />
             <h3>{title}</h3> 
             {showDescription ?
-                <p className="description">{description}</p>
+                <>
+                    <p className="description">{description}</p>
+                    <div className="goToButton"  >Ir para curso</div>
+                </>
                 : <></>}
         </div>
     )
