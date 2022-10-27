@@ -1,5 +1,5 @@
 import LogoUTFPR from '../../assets/utfpr.png';
-import Logo from '../../assets/logo.png';
+import Logo from '../../assets/logo2.png';
 
 import "./Footer.mod.css"
 

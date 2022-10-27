@@ -1,5 +1,5 @@
 import React from "react";
-import LogoImg from '../../../assets/logo.png';
+import LogoImg from '../../../assets/logo2.png';
 const Logo = () => {
     return (
         <h1>
